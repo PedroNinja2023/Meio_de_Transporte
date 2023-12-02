@@ -1,0 +1,12 @@
+Considere um sistema de gestão de transporte público em uma cidade que inclui diferentes modos de transporte: ônibus, metrô e bicicletas compartilhadas. Cada meio de transporte tem atributos comuns, como número de identificação e capacidade de passageiros. Além disso, ônibus têm informações sobre a rota, metrôs têm a linha associada, e bicicletas compartilhadas têm o estado de disponibilidade. 
+
+
+Crie uma classe MeioTransporte com os seguintes atributos privados: numeroIdentificacao (String) capacidadePassageiros (int) Implemente um construtor que inicializa esses atributos e métodos de acesso (getters e setters) para cada atributo. 
+Crie três classes derivadas de MeioTransporte: 
+Onibus: Adicione um atributo adicional para a rota. 
+Metro: Adicione um atributo adicional para a linha. 
+BicicletaCompartilhada: Adicione um atributo adicional para o estado de disponibilidade. 
+Na classe MeioTransporte, crie um método chamado informacoesTransporte que retorna uma string contendo informações sobre o meio de transporte (número de identificação, capacidade de passageiros e informações adicionais). Nas classes Onibus, Metro e BicicletaCompartilhada, sobrescreva o método informacoesTransporte para incluir detalhes específicos de cada meio de transporte. 
+Crie uma classe GerenciamentoTransporte que possui uma lista de meios de transporte disponíveis na cidade. Implemente métodos para adicionar meios de transporte, listar informações e verificar a disponibilidade de bicicletas compartilhadas. Na classe GerenciamentoTransporte, crie um método chamado verificarDisponibilidadeBicicletas que exibe o número total de bicicletas disponíveis para uso.
+Adicione à classe BicicletaCompartilhada dois métodos sobrecarregados chamados realizarManutencao. Um desses métodos não aceitará parâmetros e será responsável por imprimir uma mensagem padrão indicando que a bicicleta está passando por manutenção. O segundo método aceitará um parâmetro booleano chamado agendada, indicando se a manutenção está agendada. Este método imprimirá mensagens específicas com base no valor do parâmetro.
+Crie uma classe TesteTransportePublico com o método main para testar seu sistema. Instancie objetos de Onibus, Metro, BicicletaCompartilhada, GerenciamentoTransporte e realize operações como adicionar meios de transporte, listar informações e verificar a disponibilidade de bicicletas compartilhadas, demonstrando o uso de herança, encapsulamento, polimorfismo, sobrecarga e sobrescrita de métodos.
